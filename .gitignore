@@ -1,0 +1,21 @@
+# Node.js
+node_modules/
+*.js.map
+.DS_Store
+
+# Telegraf
+uploads/*.tmp
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*~
+
+# Build output
+dist/
+build/
