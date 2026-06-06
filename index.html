@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klas Reunie - Eind jaren '60 / Begin jaren '70</title>
+    <style>
+        /* 1970's Retro Aesthetic */
+        :root {
+            --cream: #FFF8F0;
+            --terracotta: #CC5533;
+            --olive: #6B7A4C;
+            --mustard: #E8AA3D;
+            --sage: #9CAFA2;
+            --charcoal: #3D3D3D;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 3px solid var(--terracotta);
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            color: var(--terracotta);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            text-shadow: 2px 2px var(--sage);
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: var(--olive);
+            letter-spacing: 0.1em;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 2em;
+            color: var(--terracotta);
+            border-bottom: 2px dashed var(--mustard);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .intro {
+            font-size: 1.1em;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: var(--charcoal);
+        }
+        
+        /* Photo Gallery - Grid Layout */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 20px 0;
+        }
+        
+        .photo-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        
+        .photo-card:hover {
+            transform: translateY(-8px) rotate(1deg);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+        }
+        
+        .photo-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--sage);
+            display: block;
+        }
+        
+        .photo-caption {
+            padding: 25px;
+            background: linear-gradient(135deg, white 0%, var(--cream) 100%);
+        }
+        
+        .photo-title {
+            font-size: 1.2em;
+            color: var(--terracotta);
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .photo-year {
+            display: inline-block;
+            background: var(--olive);
+            color: white;
+            padding: 3px 12px;
+            border-radius: 50px;
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+        
+        /* Placeholder for empty slots */
+        .photo-placeholder {
+            aspect-ratio: 3/4;
+            background: linear-gradient(45deg, var(--sage) 25%, transparent 25%, transparent 75%, var(--sage) 75%, var(--sage));
+            background-size: 20px 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--charcoal);
+            font-style: italic;
+        }
+        
+        .upload-hint {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255,255,255,0.9);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            color: var(--terracotta);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Timeline Section */
+        .timeline {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px 20px;
+        }
+        
+        .event {
+            display: flex;
+            gap: 20px;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.3);
+        }
+        
+        .event-number {
+            font-size: 2em;
+            color: var(--mustard);
+            min-width: 60px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .event-content h3 {
+            color: var(--terracotta);
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 3px solid var(--terracotta);
+            margin-top: 60px;
+            color: var(--olive);
+        }
+        
+        .footer-note {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🏫 Reunie '67-'72 📸</h1>
+        <div class="subtitle">De mooiste momenten van onze lagere school jaren</div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2 class="section-title">Welkom bij de Reunie!</h2>
+            <p class="intro">
+                Hier delen we herinneringen, foto's en verhalen uit onze tijd op de lagere school.
+                Laat zien wat jij nog onthoudt van die dagen! 👇
+            </p>
+        </section>
+
+        <section id="gallery" style="margin-top: 50px;">
+            <h2 class="section-title">Gallerij</h2>
+            
+            <div class="gallery">
+                <!-- Foto's worden hier automatisch toegevoegd -->
+                
+                <!-- Voorbeeldfoto 1 -->
+                <article class="photo-card" data-photo-id="1">
+                    <div class="upload-hint">Upload foto hier</div>
+                    <div class="photo-placeholder">
+                        <span>Foto #1 - Upload via Telegram</span>
+                    </div>
+                    <div class="photo-caption">
+                        <h3 class="photo-title">De schoolplein</h3>
+                        <span class="photo-year">1968</span>
+                    </div>
+                </article>
+
+                <!-- Voorbeeldfoto 2 -->
+                <article class="photo-card" data-photo-id="2">
+                    <div class="upload-hint">Upload foto hier</div>
+                    <div class="photo-placeholder">
+                        <span>Foto #2 - Upload via Telegram</span>
+                    </div>
+                    <div class="photo-caption">
+                        <h3 class="photo-title">De klaslokaal</h3>
+                        <span class="photo-year">1969</span>
+                    </div>
+                </article>
+
+                <!-- Voorbeeldfoto 3 -->
+                <article class="photo-card" data-photo-id="3">
+                    <div class="upload-hint">Upload foto hier</div>
+                    <div class="photo-placeholder">
+                        <span>Foto #3 - Upload via Telegram</span>
+                    </div>
+                    <div class="photo-caption">
+                        <h3 class="photo-title">Veldreis</h3>
+                        <span class="photo-year">1970</span>
+                    </div>
+                </article>
+
+                <!-- Extra placeholder slots (kan worden uitgebreid) -->
+                <article class="photo-card" data-photo-id="4">
+                    <div class="upload-hint">Upload foto hier</div>
+                    <div class="photo-placeholder">
+                        <span>Foto #4 - Upload via Telegram</span>
+                    </div>
+                    <div class="photo-caption">
+                        <h3 class="photo-title">Kerstfeest</h3>
+                        <span class="photo-year">1970</span>
+                    </div>
+                </article>
+
+                <article class="photo-card" data-photo-id="5">
+                    <div class="upload-hint">Upload foto hier</div>
+                    <div class="photo-placeholder">
+                        <span>Foto #5 - Upload via Telegram</span>
+                    </div>
+                    <div class="photo-caption">
+                        <h3 class="photo-title">Schoolverjaardag</h3>
+                        <span class="photo-year">1971</span>
+                    </div>
+                </article>
+
+                <!-- Meerdere slots toevoegen voor meer ruimte -->
+            </div>
+        </section>
+
+        <section id="timeline" style="margin-top: 60px;">
+            <h2 class="section-title">Belangrijke Momente</h2>
+            
+            <div class="timeline">
+                <div class="event">
+                    <div class="event-number">1</div>
+                    <div class="event-content">
+                        <h3>De eerste dag op school - 1967</h3>
+                        <p>Een foto van de klas en hoe iedereen nieuwsgierig was...</p>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="event-number">2</div>
+                    <div class="event-content">
+                        <h3>De veldreis naar de Zaan - 1969</h3>
+                        <p>We hebben een leuk weekend gehad in het bos...</p>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="event-number">3</div>
+                    <div class="event-content">
+                        <h3>De schoolverjaardag - 1970</h3>
+                        <p>Bal met de hele klas, veel lol en gezelligheid...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer-note">📸 Uploaden via Telegram: @eibergen-reunie</p>
+        <p class="footer-note">© 2026 Reunie van Klas '67-'72 | Alle rechten voorbehouden</p>
+    </footer>
+
+    <!-- Automatische upload script (wordt geladen bij live deployment) -->
+    <!-- <script src="/uploads/auto-upload.js"></script> -->
+
+</body>
+</html>
