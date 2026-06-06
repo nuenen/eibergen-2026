@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Placeholder</title>
+</head>
+<body style="font-family: sans-serif; padding: 20px; background: #f5f5f5; color: #333;">
+    <h1 style="margin-bottom: 16px; font-size: 24px;">📸 Reunie - Klassieke Foto's</h1>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        <!-- Foto 1 -->
+        <article style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="height: 200px; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); border-radius: 8px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 48px;">🏫</span>
+            </div>
+            <h3 style="margin: 0 0 4px 0; font-size: 16px;">De Klassieke Klaslokaal</h3>
+            <p style="margin: 0; color: #666; font-size: 14px;">Foto van de klas met alle leerlingen en leerkrachten uit 1970.</p>
+        </article>
+
+        <!-- Foto 2 -->
+        <article style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="height: 200px; background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%); border-radius: 8px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 48px;">🎨</span>
+            </div>
+            <h3 style="margin: 0 0 4px 0; font-size: 16px;">De Kunst Les</h3>
+            <p style="margin: 0; color: #666; font-size: 14px;">Creatieve uurtje in de kunstschool met tekenen en schilderen.</p>
+        </article>
+
+        <!-- Foto 3 -->
+        <article style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="height: 200px; background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%); border-radius: 8px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 48px;">🌳</span>
+            </div>
+            <h3 style="margin: 0 0 4px 0; font-size: 16px;">Veldreis naar het Bos</h3>
+            <p style="margin: 0; color: #666; font-size: 14px;">Natuuronderzoek en ontspanning in de prachtige natuur.</p>
+        </article>
+
+        <!-- Foto 4 -->
+        <article style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="height: 200px; background: linear-gradient(135deg, #fa709a 0%, #fee1bd 100%); border-radius: 8px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 48px;">🎭</span>
+            </div>
+            <h3 style="margin: 0 0 4px 0; font-size: 16px;">Kerstfeest Op School</h3>
+            <p style="margin: 0; color: #666; font-size: 14px;">Leuke kerstfeest met toneelstuk en dansnummer.</p>
+        </article>
+
+        <!-- Foto 5 -->
+        <article style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="height: 200px; background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%); border-radius: 8px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 48px;">🎓</span>
+            </div>
+            <h3 style="margin: 0 0 4px 0; font-size: 16px;">Schoolverjaardag</h3>
+            <p style="margin: 0; color: #666; font-size: 14px;">Feest met de hele klas en ouders op school.</p>
+        </article>
+
+        <!-- Foto 6 -->
+        <article style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="height: 200px; background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); border-radius: 8px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 48px;">⚽</span>
+            </div>
+            <h3 style="margin: 0 0 4px 0; font-size: 16px;">Voetbalwedstrijd</h3>
+            <p style="margin: 0; color: #666; font-size: 14px;">Spelende op het schoolveld tegen de buren.</p>
+        </article>
+
+        <!-- Foto 7 -->
+        <article style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="height: 200px; background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); border-radius: 8px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 48px;">🎵</span>
+            </div>
+            <h3 style="margin: 0 0 4px 0; font-size: 16px;">Musiek Les</h3>
+            <p style="margin: 0; color: #666; font-size: 14px;">Zingen en dansen tijdens de muziek les.</p>
+        </article>
+
+        <!-- Foto 8 -->
+        <article style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="height: 200px; background: linear-gradient(135deg, #fad0c4 0%, #ffd1ff 100%); border-radius: 8px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 48px;">📚</span>
+            </div>
+            <h3 style="margin: 0 0 4px 0; font-size: 16px;">Bibliotheek Bezoek</h3>
+            <p style="margin: 0; color: #666; font-size: 14px;">Boeken lezen en nieuwe boeken ontlenen.</p>
+        </article>
+
+        <!-- Extra slot (kan worden toegevoegd) -->
+        <article style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="height: 200px; background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); border-radius: 8px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 48px;">👓</span>
+            </div>
+            <h3 style="margin: 0 0 4px 0; font-size: 16px;">Nieuwe Bril</h3>
+            <p style="margin: 0; color: #666; font-size: 14px;">Mijn nieuwe bril voor de klas - ik zag alles zo duidelijk!</p>
+        </article>
+
+        <!-- Extra slot -->
+        <article style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="height: 200px; background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%); border-radius: 8px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 48px;">🌈</span>
+            </div>
+            <h3 style="margin: 0 0 4px 0; font-size: 16px;">Regenboog</h3>
+            <p style="margin: 0; color: #666; font-size: 14px;">Waar ik een prachtige regenboog zag na de school.</p>
+        </article>
+    </div>
+
+    <footer style="text-align: center; margin-top: 32px; padding: 16px; color: #888; font-size: 14px;">
+        📸 Uploaden via Telegram: @eibergen-reunie | © 2026 Reunie van Klas '67-'72
+    </footer>
+</body>
+</html>
